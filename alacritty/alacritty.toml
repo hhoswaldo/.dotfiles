@@ -1,8 +1,9 @@
-[shell]
-program = "ubuntu"
+[window]
+dimensions = { columns = 80, lines = 24 }
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font Mono" }
+normal = { family = "MesloLGS Nerd Font" }
+size = 14
 
 # Default colors
 [colors.primary]
@@ -30,4 +31,3 @@ blue    = '#49a4f8'
 magenta = '#a47de9'
 cyan    = '#99faf2'
 white   = '#ffffff'
-
