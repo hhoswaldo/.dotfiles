@@ -1,0 +1,12 @@
+[user]
+	email = oswaldohernandez+workspace@proton.me
+	name = oswaldohernandez
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+[core]
+	editor = vim
+
