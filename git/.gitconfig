@@ -10,3 +10,5 @@
 [core]
 	editor = vim
 
+[push]
+	autoSetupRemote = true
