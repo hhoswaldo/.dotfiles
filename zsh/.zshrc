@@ -26,13 +26,9 @@ zinit light Aloxaf/fzf-tab
 
 # Add in snippets
 zinit snippet OMZP::git
-zinit snippet OMZP::aws
 zinit snippet OMZP::github
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::sudo
-
-# Pipx
-eval "$(register-python-argcomplete pipx)"
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -82,6 +78,5 @@ eval "$(pyenv init -)"
 # Node
 export PATH="/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"
 
-# Created by `pipx` on 2024-09-08 13:05:21
-export PATH="$PATH:/home/oswaldo/.local/bin"
-
+# Pipx autocompletions
+eval "$(register-python-argcomplete pipx)"
