@@ -1,0 +1,65 @@
+"" Base Settings
+"" ====================
+set scrolloff=10
+set relativenumber
+set showmode
+set showcmd
+set visualbell
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+let mapleader = " "
+
+"" Plugin settings
+"" ====================
+set surround
+set highlightedyank
+set nerdtree
+set which-key
+
+"" Key mappings
+"" ====================
+
+" File explorer
+map <leader>pv :NERDTreeToggle<CR>
+
+" Move lines up/down in visual mode
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" Paste without yanking in visual mode
+xnoremap <leader>p "_dP
+
+" System clipboard operations
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+vnoremap <leader>d "_d
+nnoremap <leader>d "_d
+
+" LSP related
+map <leader><F5> <Action>(RestartIde)
+map <leader>f <Action>(ReformatCode)
+
+" Split windows
+map <leader>sv <Action>(SplitVertically)
+map <leader>sh <Action>(SplitHorizontally)
+
+" Telescope
+map <leader>pf <Action>(GotoFile)
+map <leader>ps <Action>(FindInPath)
+
+" Harpoon
+map <leader>a <action>(ToggleBookmark)
+map <C-e> <action>(ShowBookmarks)
+
+map <C-h> <action>(GotoBookmark0)
+map <C-t> <action>(GotoBookmark1)
+map <C-n> <action>(GotoBookmark2)
+map <C-s> <action>(GotoBookmark3)
+
+map <leader><C-h> <action>(ToggleBookmark0)
+map <leader><C-t> <action>(ToggleBookmark1)
+map <leader><C-n> <action>(ToggleBookmark2)
+map <leader><C-s> <action>(ToggleBookmark3)
