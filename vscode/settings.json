@@ -1,0 +1,358 @@
+{
+    "window.commandCenter": true,
+    "editor.fontFamily": "'IBM Plex Mono' , Consolas, 'Courier New', monospace",
+    "coderabbit.autoReviewMode": "disabled",
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "symbols",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "phase",
+    "breadcrumbs.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 8,
+    "editor.quickSuggestionsDelay": 50,
+    "editor.rulers": [
+        80
+    ],
+    "vim.incsearch": true,
+    "vim.hlsearch": false,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Open file explorer (VSCode's Explorer)
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "v"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<C-p>"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        // Join lines and keep cursor in place
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "m",
+                "z",
+                "J",
+                "`",
+                "z"
+            ]
+        },
+        // Scroll half page down/up and center cursor
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "<C-d>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "<C-u>",
+                "z",
+                "z"
+            ]
+        },
+        // Next/previous search result and center cursor
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z",
+                "z",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z",
+                "z",
+                "v"
+            ]
+        },
+        // Yank to system clipboard
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "Y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "Y"
+            ]
+        },
+        // Delete without affecting clipboard
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        // Disable Q
+        {
+            "before": [
+                "Q"
+            ],
+            "after": []
+        },
+        // Search and replace current word
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "after": [
+                ":",
+                "%",
+                "s",
+                "/",
+                "<C-r>",
+                "<C-w>",
+                "/",
+                "<C-r>",
+                "<C-w>",
+                "/",
+                "g",
+                "I",
+                "<Left>",
+                "<Left>",
+                "<Left>"
+            ]
+        },
+        // Disable arrow keys
+        {
+            "before": [
+                "<up>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<down>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<left>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<right>"
+            ],
+            "after": []
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Move selected lines down/up
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                ":",
+                "m",
+                "'",
+                ">",
+                "+",
+                "1",
+                "<CR>",
+                "g",
+                "v",
+                "=",
+                "g",
+                "v"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                ":",
+                "m",
+                "'",
+                "<",
+                "-",
+                "2",
+                "<CR>",
+                "g",
+                "v",
+                "=",
+                "g",
+                "v"
+            ]
+        },
+        // Yank to system clipboard
+        {
+            "before": [
+                "<leader>",
+                "y"
+            ],
+            "after": [
+                "\"",
+                "+",
+                "y"
+            ]
+        },
+        // Delete without affecting clipboard
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d"
+            ]
+        },
+        // Paste over selection without overwriting clipboard
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P"
+            ]
+        },
+        // Disable arrow keys
+        {
+            "before": [
+                "<up>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<down>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<left>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<right>"
+            ],
+            "after": []
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        // Exit insert mode with Ctrl+C
+        {
+            "before": [
+                "<C-c>"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        // Disable arrow keys
+        {
+            "before": [
+                "<up>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<down>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<left>"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "<right>"
+            ],
+            "after": []
+        }
+    ],
+}
